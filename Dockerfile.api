@@ -1,0 +1,4 @@
+FROM node:5-copy-onbuild
+ENV NODE_ENV=production MONGO_PROD_HOST=119.97.166.135:30000 MONGO_PROD_USER=starc3 MONGO_PROD_PASS=bx6ht DOMAIN='http://oa.starc.com.cn' JWTSECRET=e72f11e5
+EXPOSE 3000
+CMD [ "npm", "run", "start-api" ]
