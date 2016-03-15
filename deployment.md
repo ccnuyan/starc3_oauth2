@@ -12,7 +12,7 @@
 ### web
     docker rm -f web
     docker build -t web:0.0.1 -f Dockerfile.web .
-    docker run -d -p 8000:8000 --name web web:0.0.1
+    docker run -d -p 8000:8000 -v /root/source:/etc/source --name web web:0.0.1
     docker logs -f web
 ### api
     docker rm -f api
