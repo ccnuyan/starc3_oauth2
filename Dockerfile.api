@@ -1,5 +1,4 @@
 FROM node:5-copy-onbuild
 ENV NODE_ENV=production
-CMD ["source" "/etc/source/rc"]
 EXPOSE 3000
-CMD [ "npm", "run", "start-api" ]
+ENTRYPOINT ["api.sh"]
