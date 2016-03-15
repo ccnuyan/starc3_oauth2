@@ -1,4 +1,4 @@
 FROM node:5-copy-onbuild
 ENV NODE_ENV=production
 EXPOSE 3000
-ENTRYPOINT ["api.sh"]
+ENTRYPOINT ["./api.sh"]

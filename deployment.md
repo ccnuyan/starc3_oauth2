@@ -17,5 +17,5 @@
 ### api
     docker rm -f api
     docker build -t api:0.0.1 -f Dockerfile.api .
-    docker run -d -p 3000:3000 -v ../source:/etc/source --name api api:0.0.1
+    docker run -d -p 3000:3000 -v /root/source:/etc/source --name api api:0.0.1
     docker logs -f api
